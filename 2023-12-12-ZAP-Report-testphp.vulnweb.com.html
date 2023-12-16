@@ -1,0 +1,2040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Scanning Report2</title>
+<link
+	href="2023-12-12-ZAP-Report-testphp.vulnweb.com/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2023-12-12-ZAP-Report-testphp.vulnweb.com/themes/original/main.css" rel="stylesheet">
+<link
+	href="2023-12-12-ZAP-Report-testphp.vulnweb.com/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Scanning Report2</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2023-12-12-ZAP-Report-testphp.vulnweb.com/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Tue 12 Dec 2023, at 18:35:26</span>
+		</p>
+		<p>ZAP Version: 2.14.0</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							<li><a
+								href="#report-description">Report description</a></li>
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-3-confidence-3"><span>Risk</span>=<span
+									class="risk-level">High</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-3-confidence-2"><span>Risk</span>=<span
+									class="risk-level">High</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(3)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			<section
+				id="report-description">
+				<h3>Report description</h3>
+				<div class="report-description--container">
+					
+
+<p>
+	
+	  High &amp; medium level vulnerabilities 
+	  
+</p>
+ 
+				</div>
+			</section>
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://testphp.vulnweb.com</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">False Positive</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="3">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(42.9%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(57.1%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28.6%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(42.9%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28.6%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(71.4%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 32.5%"><col
+							style="width: 32.5%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="2">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://testphp.vulnweb.com</th>
+							
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(7)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Cross Site Scripting (DOM Based)</a></th>
+							<td class="risk-level">High</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(57.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Cross Site Scripting (Reflected)</a></th>
+							<td class="risk-level">High</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">SQL Injection</a></th>
+							<td class="risk-level">High</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28.6%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">SQL Injection - MySQL</a></th>
+							<td class="risk-level">High</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28.6%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">.htaccess Information Leak</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>51</span><br> <span
+								class="additional-info-percentages">(728.6%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>47</span><br> <span
+								class="additional-info-percentages">(671.4%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>7</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				
+				
+				<li id="alerts--risk-3-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">High</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://testphp.vulnweb.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Cross Site Scripting (DOM Based)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://testphp.vulnweb.com/index.php#jaVasCript:/*-/*`/*\`/*&#39;/*&quot;/**/(/* */oNcliCk=alert(5397) )//%0D%0A%0d%0a//&lt;/stYle/&lt;/titLe/&lt;/teXtarEa/&lt;/scRipt/--!&gt;\x3csVg/&lt;sVg/oNloAd=alert(5397)//&gt;\x3e</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/01-Testing_for_DOM-based_Cross_Site_Scripting">WSTG-v42-CLNT-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS).html">OWASP_2017_A07</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cross-site Scripting (XSS) is an attack technique that involves echoing attacker-supplied code into a user&#39;s browser instance. A browser instance can be a standard web browser client, or a browser object embedded in a software product such as the browser within WinAmp, an RSS reader, or an email client. The code itself is usually written in HTML/JavaScript, but may also extend to VBScript, ActiveX, Java, Flash, or any other browser-supported technology.</p>
+
+<p>When an attacker gets a user&#39;s browser to execute his/her code, the code will run within the security context (or zone) of the hosting web site. With this level of privilege, the code has the ability to read, modify and transmit any sensitive data accessible by the browser. A Cross-site Scripted user could have his/her account hijacked (cookie theft), their browser redirected to another location, or possibly shown fraudulent content delivered by the web site they are visiting. Cross-site Scripting attacks essentially compromise the trust relationship between a user and the web site. Applications utilizing browser object instances which load content from the file system may execute code under the local machine zone allowing for system compromise.</p>
+
+<p>There are three types of Cross-site Scripting attacks: non-persistent, persistent and DOM-based.</p>
+
+<p>Non-persistent attacks and DOM-based attacks require a user to either visit a specially crafted link laced with malicious code, or visit a malicious web page containing a web form, which when posted to the vulnerable site, will mount the attack. Using a malicious form will oftentimes take place when the vulnerable resource only accepts HTTP POST requests. In such a case, the form can be submitted automatically, without the victim&#39;s knowledge (e.g. by using JavaScript). Upon clicking on the malicious link or submitting the malicious form, the XSS payload will get echoed back and will get interpreted by the user&#39;s browser and execute. Another technique to send almost arbitrary requests (GET and POST) is by using an embedded client, such as Adobe Flash.</p>
+
+<p>Persistent attacks occur when the malicious code is submitted to a web site where it&#39;s stored for a period of time. Examples of an attacker&#39;s favorite targets often include message board posts, web mail messages, and web chat software. The unsuspecting user is not required to interact with any additional site/link (e.g. an attacker site or a malicious link sent via email), just simply view the web page containing the code.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Tag name: input Att name: goButton Att id: </p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (384 bytes)</summary>
+				
+				<pre><code>GET http://testphp.vulnweb.com/index.php HTTP/1.1
+host: testphp.vulnweb.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: http://testphp.vulnweb.com/
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (14 bytes)</summary>
+				
+				<pre><code>HTTP/1.0 0
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>#jaVasCript:/*-/*`/*\`/*&#39;/*&quot;/**/(/* */oNcliCk=alert(5397) )//%0D%0A%0d%0a//&lt;/stYle/&lt;/titLe/&lt;/teXtarEa/&lt;/scRipt/--!&gt;\x3csVg/&lt;sVg/oNloAd=alert(5397)//&gt;\x3e</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Phase: Architecture and Design</p>
+
+<p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p>
+
+<p>Examples of libraries and frameworks that make it easier to generate properly encoded output include Microsoft&#39;s Anti-XSS library, the OWASP ESAPI Encoding module, and Apache Wicket.</p>
+
+<p>Phases: Implementation; Architecture and Design</p>
+
+<p>Understand the context in which your data will be used and the encoding that will be expected. This is especially important when transmitting data between different components, or when generating outputs that can contain multiple encodings at the same time, such as web pages or multi-part mail messages. Study all expected communication protocols and data representations to determine the required encoding strategies.</p>
+
+<p>For any data that will be output to another web page, especially any data that was received from external inputs, use the appropriate encoding on all non-alphanumeric characters.</p>
+
+<p>Consult the XSS Prevention Cheat Sheet for more details on the types of encoding and escaping that are needed.</p>
+
+<p>Phase: Architecture and Design</p>
+
+<p>For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.</p>
+
+<p>If available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.</p>
+
+<p>Phase: Implementation</p>
+
+<p>For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page. This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.</p>
+
+<p>To help mitigate XSS attacks against the user&#39;s session cookie, set the session cookie to be HttpOnly. In browsers that support the HttpOnly feature (such as more recent versions of Internet Explorer and Firefox), this attribute can prevent the user&#39;s session cookie from being accessible to malicious client-side scripts that use document.cookie. This is not a complete solution, since HttpOnly is not supported by all browsers. More importantly, XMLHTTPRequest and other powerful browser technologies provide read access to HTTP headers, including the Set-Cookie header in which the HttpOnly flag is set.</p>
+
+<p>Assume all input is malicious. Use an &quot;accept known good&quot; input validation strategy, i.e., use an allow list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a deny list). However, deny lists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.</p>
+
+<p>When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, &quot;boat&quot; may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as &quot;red&quot; or &quot;blue.&quot;</p>
+
+<p>Ensure that you perform input validation at well-defined interfaces within the application. This will help protect the application even if a component is reused or moved elsewhere.</p>
+
+<p>	</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-3-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">High</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://testphp.vulnweb.com</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Cross Site Scripting (Reflected)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://testphp.vulnweb.com/listproducts.php?cat=%27%22%3Cimg+src%3Dx+onerror%3Dprompt%28%29%3E</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting">WSTG-v42-INPV-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS).html">OWASP_2017_A07</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cross-site Scripting (XSS) is an attack technique that involves echoing attacker-supplied code into a user&#39;s browser instance. A browser instance can be a standard web browser client, or a browser object embedded in a software product such as the browser within WinAmp, an RSS reader, or an email client. The code itself is usually written in HTML/JavaScript, but may also extend to VBScript, ActiveX, Java, Flash, or any other browser-supported technology.</p>
+
+<p>When an attacker gets a user&#39;s browser to execute his/her code, the code will run within the security context (or zone) of the hosting web site. With this level of privilege, the code has the ability to read, modify and transmit any sensitive data accessible by the browser. A Cross-site Scripted user could have his/her account hijacked (cookie theft), their browser redirected to another location, or possibly shown fraudulent content delivered by the web site they are visiting. Cross-site Scripting attacks essentially compromise the trust relationship between a user and the web site. Applications utilizing browser object instances which load content from the file system may execute code under the local machine zone allowing for system compromise.</p>
+
+<p>There are three types of Cross-site Scripting attacks: non-persistent, persistent and DOM-based.</p>
+
+<p>Non-persistent attacks and DOM-based attacks require a user to either visit a specially crafted link laced with malicious code, or visit a malicious web page containing a web form, which when posted to the vulnerable site, will mount the attack. Using a malicious form will oftentimes take place when the vulnerable resource only accepts HTTP POST requests. In such a case, the form can be submitted automatically, without the victim&#39;s knowledge (e.g. by using JavaScript). Upon clicking on the malicious link or submitting the malicious form, the XSS payload will get echoed back and will get interpreted by the user&#39;s browser and execute. Another technique to send almost arbitrary requests (GET and POST) is by using an embedded client, such as Adobe Flash.</p>
+
+<p>Persistent attacks occur when the malicious code is submitted to a web site where it&#39;s stored for a period of time. Examples of an attacker&#39;s favorite targets often include message board posts, web mail messages, and web chat software. The unsuspecting user is not required to interact with any additional site/link (e.g. an attacker site or a malicious link sent via email), just simply view the web page containing the code.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (358 bytes)</summary>
+				
+				<pre><code>GET http://testphp.vulnweb.com/listproducts.php?cat=%27%22%3Cimg+src%3Dx+onerror%3Dprompt%28%29%3E HTTP/1.1
+host: testphp.vulnweb.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://testphp.vulnweb.com/categories.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (222 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: nginx/1.19.0
+Date: Tue, 12 Dec 2023 12:56:06 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+X-Powered-By: PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1
+content-length: 5005
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (5005 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;
+&quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;&lt;!-- InstanceBegin template=&quot;/Templates/main_dynamic_template.dwt.php&quot; codeOutsideHTMLIsLocked=&quot;false&quot; --&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-2&quot;&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;document_title_rgn&quot; --&gt;
+&lt;title&gt;pictures&lt;/title&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot;&gt;
+&lt;!-- InstanceBeginEditable name=&quot;headers_rgn&quot; --&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;script language=&quot;JavaScript&quot; type=&quot;text/JavaScript&quot;&gt;
+&lt;!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName==&quot;Netscape&quot;)&amp;&amp;(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//--&gt;
+&lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body&gt; 
+&lt;div id=&quot;mainLayer&quot; style=&quot;position:absolute; width:700px; z-index:1&quot;&gt;
+&lt;div id=&quot;masthead&quot;&gt; 
+  &lt;h1 id=&quot;siteName&quot;&gt;&lt;a href=&quot;https://www.acunetix.com/&quot;&gt;&lt;img src=&quot;images/logo.gif&quot; width=&quot;306&quot; height=&quot;38&quot; border=&quot;0&quot; alt=&quot;Acunetix website security&quot;&gt;&lt;/a&gt;&lt;/h1&gt;   
+  &lt;h6 id=&quot;siteInfo&quot;&gt;TEST and Demonstration site for &lt;a href=&quot;https://www.acunetix.com/vulnerability-scanner/&quot;&gt;Acunetix Web Vulnerability Scanner&lt;/a&gt;&lt;/h6&gt;
+  &lt;div id=&quot;globalNav&quot;&gt; 
+      	&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;
+	&lt;td align=&quot;left&quot;&gt;
+		&lt;a href=&quot;index.php&quot;&gt;home&lt;/a&gt; | &lt;a href=&quot;categories.php&quot;&gt;categories&lt;/a&gt; | &lt;a href=&quot;artists.php&quot;&gt;artists
+		&lt;/a&gt; | &lt;a href=&quot;disclaimer.php&quot;&gt;disclaimer&lt;/a&gt; | &lt;a href=&quot;cart.php&quot;&gt;your cart&lt;/a&gt; | 
+		&lt;a href=&quot;guestbook.php&quot;&gt;guestbook&lt;/a&gt; | 
+		&lt;a href=&quot;AJAX/index.php&quot;&gt;AJAX Demo&lt;/a&gt;
+	&lt;/td&gt;
+	&lt;td align=&quot;right&quot;&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt; 
+&lt;/div&gt; 
+&lt;!-- end masthead --&gt; 
+
+&lt;!-- begin content --&gt;
+&lt;!-- InstanceBeginEditable name=&quot;content_rgn&quot; --&gt;
+&lt;div id=&quot;content&quot;&gt;
+	Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &#39;&#39;&quot;&lt;img src=x onerror=prompt()&gt;&#39; at line 1
+Warning: mysql_fetch_array() expects parameter 1 to be resource, boolean given in /hj/var/www/listproducts.php on line 74
+&lt;/div&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;!--end content --&gt;
+
+&lt;div id=&quot;navBar&quot;&gt; 
+  &lt;div id=&quot;search&quot;&gt; 
+    &lt;form action=&quot;search.php?test=query&quot; method=&quot;post&quot;&gt; 
+      &lt;label&gt;search art&lt;/label&gt; 
+      &lt;input name=&quot;searchFor&quot; type=&quot;text&quot; size=&quot;10&quot;&gt; 
+      &lt;input name=&quot;goButton&quot; type=&quot;submit&quot; value=&quot;go&quot;&gt; 
+    &lt;/form&gt; 
+  &lt;/div&gt; 
+  &lt;div id=&quot;sectionLinks&quot;&gt; 
+    &lt;ul&gt; 
+      &lt;li&gt;&lt;a href=&quot;categories.php&quot;&gt;Browse categories&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;artists.php&quot;&gt;Browse artists&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;cart.php&quot;&gt;Your cart&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;login.php&quot;&gt;Signup&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;userinfo.php&quot;&gt;Your profile&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;guestbook.php&quot;&gt;Our guestbook&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;AJAX/index.php&quot;&gt;AJAX Demo&lt;/a&gt;&lt;/li&gt;
+	  &lt;/li&gt; 
+    &lt;/ul&gt; 
+  &lt;/div&gt; 
+  &lt;div class=&quot;relatedLinks&quot;&gt; 
+    &lt;h3&gt;Links&lt;/h3&gt; 
+    &lt;ul&gt; 
+      &lt;li&gt;&lt;a href=&quot;http://www.acunetix.com&quot;&gt;Security art&lt;/a&gt;&lt;/li&gt; 
+	  &lt;li&gt;&lt;a href=&quot;https://www.acunetix.com/vulnerability-scanner/php-security-scanner/&quot;&gt;PHP scanner&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/&quot;&gt;PHP vuln help&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;http://www.eclectasy.com/Fractal-Explorer/index.html&quot;&gt;Fractal Explorer&lt;/a&gt;&lt;/li&gt; 
+    &lt;/ul&gt; 
+  &lt;/div&gt; 
+  &lt;div id=&quot;advert&quot;&gt; 
+    &lt;p&gt;
+      &lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0&quot; width=&quot;107&quot; height=&quot;66&quot;&gt;
+        &lt;param name=&quot;movie&quot; value=&quot;Flash/add.swf&quot;&gt;
+        &lt;param name=quality value=high&gt;
+        &lt;embed src=&quot;Flash/add.swf&quot; quality=high pluginspage=&quot;http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;107&quot; height=&quot;66&quot;&gt;&lt;/embed&gt;
+      &lt;/object&gt;
+    &lt;/p&gt;
+  &lt;/div&gt; 
+&lt;/div&gt; 
+
+&lt;!--end navbar --&gt; 
+&lt;div id=&quot;siteInfo&quot;&gt;  &lt;a href=&quot;http://www.acunetix.com&quot;&gt;About Us&lt;/a&gt; | &lt;a href=&quot;privacy.php&quot;&gt;Privacy Policy&lt;/a&gt; | &lt;a href=&quot;mailto:wvs@acunetix.com&quot;&gt;Contact Us&lt;/a&gt; | &amp;copy;2019
+  Acunetix Ltd 
+&lt;/div&gt; 
+&lt;br&gt; 
+&lt;div style=&quot;background-color:lightgray;width:100%;text-align:center;font-size:12px;padding:1px&quot;&gt;
+&lt;p style=&quot;padding-left:5%;padding-right:5%&quot;&gt;&lt;b&gt;Warning&lt;/b&gt;: This is not a real shop. This is an example PHP application, which is intentionally vulnerable to web attacks. It is intended to help you test Acunetix. It also helps you understand how developer errors and bad configuration may let someone break into your website. You can use it to test other tools and your manual hacking skills as well. Tip: Look for potential SQL Injections, Cross-site Scripting (XSS), and Cross-site Request Forgery (CSRF), and more.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;!-- InstanceEnd --&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>cat</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>&#39;&quot;&lt;img src=x onerror=prompt()&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&#39;&quot;&lt;img src=x onerror=prompt()&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Phase: Architecture and Design</p>
+
+<p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p>
+
+<p>Examples of libraries and frameworks that make it easier to generate properly encoded output include Microsoft&#39;s Anti-XSS library, the OWASP ESAPI Encoding module, and Apache Wicket.</p>
+
+<p>Phases: Implementation; Architecture and Design</p>
+
+<p>Understand the context in which your data will be used and the encoding that will be expected. This is especially important when transmitting data between different components, or when generating outputs that can contain multiple encodings at the same time, such as web pages or multi-part mail messages. Study all expected communication protocols and data representations to determine the required encoding strategies.</p>
+
+<p>For any data that will be output to another web page, especially any data that was received from external inputs, use the appropriate encoding on all non-alphanumeric characters.</p>
+
+<p>Consult the XSS Prevention Cheat Sheet for more details on the types of encoding and escaping that are needed.</p>
+
+<p>Phase: Architecture and Design</p>
+
+<p>For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.</p>
+
+<p>If available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.</p>
+
+<p>Phase: Implementation</p>
+
+<p>For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page. This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.</p>
+
+<p>To help mitigate XSS attacks against the user&#39;s session cookie, set the session cookie to be HttpOnly. In browsers that support the HttpOnly feature (such as more recent versions of Internet Explorer and Firefox), this attribute can prevent the user&#39;s session cookie from being accessible to malicious client-side scripts that use document.cookie. This is not a complete solution, since HttpOnly is not supported by all browsers. More importantly, XMLHTTPRequest and other powerful browser technologies provide read access to HTTP headers, including the Set-Cookie header in which the HttpOnly flag is set.</p>
+
+<p>Assume all input is malicious. Use an &quot;accept known good&quot; input validation strategy, i.e., use an allow list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a deny list). However, deny lists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.</p>
+
+<p>When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, &quot;boat&quot; may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as &quot;red&quot; or &quot;blue.&quot;</p>
+
+<p>Ensure that you perform input validation at well-defined interfaces within the application. This will help protect the application even if a component is reused or moved elsewhere.</p>
+
+<p>	</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">SQL Injection</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://testphp.vulnweb.com/artists.php?artist=5-2</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>SQL injection may be possible.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The original page results were successfully replicated using the expression [5-2] as the parameter value</p>
+
+<p>The parameter value being modified was stripped from the HTML output for the purposes of the comparison</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (310 bytes)</summary>
+				
+				<pre><code>GET http://testphp.vulnweb.com/artists.php?artist=5-2 HTTP/1.1
+host: testphp.vulnweb.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://testphp.vulnweb.com/artists.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (222 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: nginx/1.19.0
+Date: Tue, 12 Dec 2023 12:56:08 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+X-Powered-By: PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1
+content-length: 6193
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (6193 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;
+&quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;&lt;!-- InstanceBegin template=&quot;/Templates/main_dynamic_template.dwt.php&quot; codeOutsideHTMLIsLocked=&quot;false&quot; --&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-2&quot;&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;document_title_rgn&quot; --&gt;
+&lt;title&gt;artists&lt;/title&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot;&gt;
+&lt;!-- InstanceBeginEditable name=&quot;headers_rgn&quot; --&gt;
+&lt;!-- here goes headers headers --&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;script language=&quot;JavaScript&quot; type=&quot;text/JavaScript&quot;&gt;
+&lt;!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName==&quot;Netscape&quot;)&amp;&amp;(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//--&gt;
+&lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body&gt; 
+&lt;div id=&quot;mainLayer&quot; style=&quot;position:absolute; width:700px; z-index:1&quot;&gt;
+&lt;div id=&quot;masthead&quot;&gt; 
+  &lt;h1 id=&quot;siteName&quot;&gt;&lt;a href=&quot;https://www.acunetix.com/&quot;&gt;&lt;img src=&quot;images/logo.gif&quot; width=&quot;306&quot; height=&quot;38&quot; border=&quot;0&quot; alt=&quot;Acunetix website security&quot;&gt;&lt;/a&gt;&lt;/h1&gt;   
+  &lt;h6 id=&quot;siteInfo&quot;&gt;TEST and Demonstration site for &lt;a href=&quot;https://www.acunetix.com/vulnerability-scanner/&quot;&gt;Acunetix Web Vulnerability Scanner&lt;/a&gt;&lt;/h6&gt;
+  &lt;div id=&quot;globalNav&quot;&gt; 
+      	&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;
+	&lt;td align=&quot;left&quot;&gt;
+		&lt;a href=&quot;index.php&quot;&gt;home&lt;/a&gt; | &lt;a href=&quot;categories.php&quot;&gt;categories&lt;/a&gt; | &lt;a href=&quot;artists.php&quot;&gt;artists
+		&lt;/a&gt; | &lt;a href=&quot;disclaimer.php&quot;&gt;disclaimer&lt;/a&gt; | &lt;a href=&quot;cart.php&quot;&gt;your cart&lt;/a&gt; | 
+		&lt;a href=&quot;guestbook.php&quot;&gt;guestbook&lt;/a&gt; | 
+		&lt;a href=&quot;AJAX/index.php&quot;&gt;AJAX Demo&lt;/a&gt;
+	&lt;/td&gt;
+	&lt;td align=&quot;right&quot;&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt; 
+&lt;/div&gt; 
+&lt;!-- end masthead --&gt; 
+
+&lt;!-- begin content --&gt;
+&lt;!-- InstanceBeginEditable name=&quot;content_rgn&quot; --&gt;
+&lt;div id=&quot;content&quot;&gt;
+	&lt;h2 id=&#39;pageName&#39;&gt;artist: lyzae&lt;/h2&gt;&lt;div class=&#39;story&#39;&gt;&lt;p&gt;&lt;p&gt;
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie.
+Sed aliquam sem ut arcu. Phasellus sollicitudin. Vestibulum condimentum facilisis
+nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.
+Cras venenatis. Aliquam posuere lobortis pede. Nullam fringilla urna id leo.
+Praesent aliquet pretium erat. Praesent non odio. Pellentesque a magna a
+mauris vulputate lacinia. Aenean viverra. Class aptent taciti sociosqu ad
+litora torquent per conubia nostra, per inceptos hymenaeos. Aliquam lacus.
+Mauris magna eros, semper a, tempor et, rutrum et, tortor.
+&lt;/p&gt;
+&lt;p&gt;
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie.
+Sed aliquam sem ut arcu. Phasellus sollicitudin. Vestibulum condimentum facilisis
+nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.
+Cras venenatis. Aliquam posuere lobortis pede. Nullam fringilla urna id leo.
+Praesent aliquet pretium erat. Praesent non odio. Pellentesque a magna a
+mauris vulputate lacinia. Aenean viverra. Class aptent taciti sociosqu ad
+litora torquent per conubia nostra, per inceptos hymenaeos. Aliquam lacus.
+Mauris magna eros, semper a, tempor et, rutrum et, tortor.
+&lt;/p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#39;listproducts.php?artist=3&#39;&gt;view pictures of the artist&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#39;#&#39; onClick=&quot;window.open(&#39;./comment.php?aid=3&#39;,&#39;comment&#39;,&#39;width=500,height=400&#39;)&quot;&gt;comment on this artist&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;	
+&lt;/div&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;!--end content --&gt;
+
+&lt;div id=&quot;navBar&quot;&gt; 
+  &lt;div id=&quot;search&quot;&gt; 
+    &lt;form action=&quot;search.php?test=query&quot; method=&quot;post&quot;&gt; 
+      &lt;label&gt;search art&lt;/label&gt; 
+      &lt;input name=&quot;searchFor&quot; type=&quot;text&quot; size=&quot;10&quot;&gt; 
+      &lt;input name=&quot;goButton&quot; type=&quot;submit&quot; value=&quot;go&quot;&gt; 
+    &lt;/form&gt; 
+  &lt;/div&gt; 
+  &lt;div id=&quot;sectionLinks&quot;&gt; 
+    &lt;ul&gt; 
+      &lt;li&gt;&lt;a href=&quot;categories.php&quot;&gt;Browse categories&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;artists.php&quot;&gt;Browse artists&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;cart.php&quot;&gt;Your cart&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;login.php&quot;&gt;Signup&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;userinfo.php&quot;&gt;Your profile&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;guestbook.php&quot;&gt;Our guestbook&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;AJAX/index.php&quot;&gt;AJAX Demo&lt;/a&gt;&lt;/li&gt;
+	  &lt;/li&gt; 
+    &lt;/ul&gt; 
+  &lt;/div&gt; 
+  &lt;div class=&quot;relatedLinks&quot;&gt; 
+    &lt;h3&gt;Links&lt;/h3&gt; 
+    &lt;ul&gt; 
+      &lt;li&gt;&lt;a href=&quot;http://www.acunetix.com&quot;&gt;Security art&lt;/a&gt;&lt;/li&gt; 
+	  &lt;li&gt;&lt;a href=&quot;https://www.acunetix.com/vulnerability-scanner/php-security-scanner/&quot;&gt;PHP scanner&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/&quot;&gt;PHP vuln help&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;http://www.eclectasy.com/Fractal-Explorer/index.html&quot;&gt;Fractal Explorer&lt;/a&gt;&lt;/li&gt; 
+    &lt;/ul&gt; 
+  &lt;/div&gt; 
+  &lt;div id=&quot;advert&quot;&gt; 
+    &lt;p&gt;
+      &lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0&quot; width=&quot;107&quot; height=&quot;66&quot;&gt;
+        &lt;param name=&quot;movie&quot; value=&quot;Flash/add.swf&quot;&gt;
+        &lt;param name=quality value=high&gt;
+        &lt;embed src=&quot;Flash/add.swf&quot; quality=high pluginspage=&quot;http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;107&quot; height=&quot;66&quot;&gt;&lt;/embed&gt;
+      &lt;/object&gt;
+    &lt;/p&gt;
+  &lt;/div&gt; 
+&lt;/div&gt; 
+
+&lt;!--end navbar --&gt; 
+&lt;div id=&quot;siteInfo&quot;&gt;  &lt;a href=&quot;http://www.acunetix.com&quot;&gt;About Us&lt;/a&gt; | &lt;a href=&quot;privacy.php&quot;&gt;Privacy Policy&lt;/a&gt; | &lt;a href=&quot;mailto:wvs@acunetix.com&quot;&gt;Contact Us&lt;/a&gt; | &amp;copy;2019
+  Acunetix Ltd 
+&lt;/div&gt; 
+&lt;br&gt; 
+&lt;div style=&quot;background-color:lightgray;width:100%;text-align:center;font-size:12px;padding:1px&quot;&gt;
+&lt;p style=&quot;padding-left:5%;padding-right:5%&quot;&gt;&lt;b&gt;Warning&lt;/b&gt;: This is not a real shop. This is an example PHP application, which is intentionally vulnerable to web attacks. It is intended to help you test Acunetix. It also helps you understand how developer errors and bad configuration may let someone break into your website. You can use it to test other tools and your manual hacking skills as well. Tip: Look for potential SQL Injections, Cross-site Scripting (XSS), and Cross-site Request Forgery (CSRF), and more.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;!-- InstanceEnd --&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>artist</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>5-2</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Do not trust client side input, even if there is client side validation in place.</p>
+
+<p>In general, type check all data on the server side.</p>
+
+<p>If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by &#39;?&#39;</p>
+
+<p>If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.</p>
+
+<p>If database Stored Procedures can be used, use them.</p>
+
+<p>Do *not* concatenate strings into queries in the stored procedure, or use &#39;exec&#39;, &#39;exec immediate&#39;, or equivalent functionality!</p>
+
+<p>Do not create dynamic SQL queries using simple string concatenation.</p>
+
+<p>Escape all data received from the client.</p>
+
+<p>Apply an &#39;allow list&#39; of allowed characters, or a &#39;deny list&#39; of disallowed characters in user input.</p>
+
+<p>Apply the principle of least privilege by using the least privileged database user possible.</p>
+
+<p>In particular, avoid using the &#39;sa&#39; or &#39;db-owner&#39; database users. This does not eliminate SQL injection, but minimizes its impact.</p>
+
+<p>Grant the minimum database access that is necessary for the application.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">SQL Injection - MySQL</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://testphp.vulnweb.com/artists.php?artist=3</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>SQL injection may be possible.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The query time is controllable using parameter value [3 / sleep(15) ], which caused the request to take [20,295] milliseconds, when the original unmodified query with value [3] took [566] milliseconds </p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (327 bytes)</summary>
+				
+				<pre><code>GET http://testphp.vulnweb.com/artists.php?artist=3+%2F+sleep%2815%29+ HTTP/1.1
+host: testphp.vulnweb.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://testphp.vulnweb.com/artists.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (14 bytes)</summary>
+				
+				<pre><code>HTTP/1.0 0
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>artist</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>3 / sleep(15) </code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Do not trust client side input, even if there is client side validation in place.</p>
+
+<p>In general, type check all data on the server side.</p>
+
+<p>If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by &#39;?&#39;</p>
+
+<p>If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.</p>
+
+<p>If database Stored Procedures can be used, use them.</p>
+
+<p>Do *not* concatenate strings into queries in the stored procedure, or use &#39;exec&#39;, &#39;exec immediate&#39;, or equivalent functionality!</p>
+
+<p>Do not create dynamic SQL queries using simple string concatenation.</p>
+
+<p>Escape all data received from the client.</p>
+
+<p>Apply an &#39;allow list&#39; of allowed characters, or a &#39;deny list&#39; of disallowed characters in user input.</p>
+
+<p>Apply the principle of least privilege by using the least privileged database user possible.</p>
+
+<p>In particular, avoid using the &#39;sa&#39; or &#39;db-owner&#39; database users. This does not eliminate SQL injection, but minimizes its impact.</p>
+
+<p>Grant the minimum database access that is necessary for the application.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://testphp.vulnweb.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://testphp.vulnweb.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (431 bytes)</summary>
+				
+				<pre><code>GET http://testphp.vulnweb.com/ HTTP/1.1
+host: testphp.vulnweb.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (222 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: nginx/1.19.0
+Date: Tue, 12 Dec 2023 12:41:10 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+X-Powered-By: PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1
+content-length: 4958
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4958 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;
+&quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;&lt;!-- InstanceBegin template=&quot;/Templates/main_dynamic_template.dwt.php&quot; codeOutsideHTMLIsLocked=&quot;false&quot; --&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-2&quot;&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;document_title_rgn&quot; --&gt;
+&lt;title&gt;Home of Acunetix Art&lt;/title&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot;&gt;
+&lt;!-- InstanceBeginEditable name=&quot;headers_rgn&quot; --&gt;
+&lt;!-- here goes headers headers --&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;script language=&quot;JavaScript&quot; type=&quot;text/JavaScript&quot;&gt;
+&lt;!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName==&quot;Netscape&quot;)&amp;&amp;(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//--&gt;
+&lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body&gt; 
+&lt;div id=&quot;mainLayer&quot; style=&quot;position:absolute; width:700px; z-index:1&quot;&gt;
+&lt;div id=&quot;masthead&quot;&gt; 
+  &lt;h1 id=&quot;siteName&quot;&gt;&lt;a href=&quot;https://www.acunetix.com/&quot;&gt;&lt;img src=&quot;images/logo.gif&quot; width=&quot;306&quot; height=&quot;38&quot; border=&quot;0&quot; alt=&quot;Acunetix website security&quot;&gt;&lt;/a&gt;&lt;/h1&gt;   
+  &lt;h6 id=&quot;siteInfo&quot;&gt;TEST and Demonstration site for &lt;a href=&quot;https://www.acunetix.com/vulnerability-scanner/&quot;&gt;Acunetix Web Vulnerability Scanner&lt;/a&gt;&lt;/h6&gt;
+  &lt;div id=&quot;globalNav&quot;&gt; 
+      	&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;
+	&lt;td align=&quot;left&quot;&gt;
+		&lt;a href=&quot;index.php&quot;&gt;home&lt;/a&gt; | &lt;a href=&quot;categories.php&quot;&gt;categories&lt;/a&gt; | &lt;a href=&quot;artists.php&quot;&gt;artists
+		&lt;/a&gt; | &lt;a href=&quot;disclaimer.php&quot;&gt;disclaimer&lt;/a&gt; | &lt;a href=&quot;cart.php&quot;&gt;your cart&lt;/a&gt; | 
+		&lt;a href=&quot;guestbook.php&quot;&gt;guestbook&lt;/a&gt; | 
+		&lt;a href=&quot;AJAX/index.php&quot;&gt;AJAX Demo&lt;/a&gt;
+	&lt;/td&gt;
+	&lt;td align=&quot;right&quot;&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt; 
+&lt;/div&gt; 
+&lt;!-- end masthead --&gt; 
+
+&lt;!-- begin content --&gt;
+&lt;!-- InstanceBeginEditable name=&quot;content_rgn&quot; --&gt;
+&lt;div id=&quot;content&quot;&gt;
+	&lt;h2 id=&quot;pageName&quot;&gt;welcome to our page&lt;/h2&gt;
+	  &lt;div class=&quot;story&quot;&gt;
+		&lt;h3&gt;Test site for Acunetix WVS.&lt;/h3&gt;
+	  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;!--end content --&gt;
+
+&lt;div id=&quot;navBar&quot;&gt; 
+  &lt;div id=&quot;search&quot;&gt; 
+    &lt;form action=&quot;search.php?test=query&quot; method=&quot;post&quot;&gt; 
+      &lt;label&gt;search art&lt;/label&gt; 
+      &lt;input name=&quot;searchFor&quot; type=&quot;text&quot; size=&quot;10&quot;&gt; 
+      &lt;input name=&quot;goButton&quot; type=&quot;submit&quot; value=&quot;go&quot;&gt; 
+    &lt;/form&gt; 
+  &lt;/div&gt; 
+  &lt;div id=&quot;sectionLinks&quot;&gt; 
+    &lt;ul&gt; 
+      &lt;li&gt;&lt;a href=&quot;categories.php&quot;&gt;Browse categories&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;artists.php&quot;&gt;Browse artists&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;cart.php&quot;&gt;Your cart&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;login.php&quot;&gt;Signup&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;userinfo.php&quot;&gt;Your profile&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;guestbook.php&quot;&gt;Our guestbook&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;AJAX/index.php&quot;&gt;AJAX Demo&lt;/a&gt;&lt;/li&gt;
+	  &lt;/li&gt; 
+    &lt;/ul&gt; 
+  &lt;/div&gt; 
+  &lt;div class=&quot;relatedLinks&quot;&gt; 
+    &lt;h3&gt;Links&lt;/h3&gt; 
+    &lt;ul&gt; 
+      &lt;li&gt;&lt;a href=&quot;http://www.acunetix.com&quot;&gt;Security art&lt;/a&gt;&lt;/li&gt; 
+	  &lt;li&gt;&lt;a href=&quot;https://www.acunetix.com/vulnerability-scanner/php-security-scanner/&quot;&gt;PHP scanner&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/&quot;&gt;PHP vuln help&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;http://www.eclectasy.com/Fractal-Explorer/index.html&quot;&gt;Fractal Explorer&lt;/a&gt;&lt;/li&gt; 
+    &lt;/ul&gt; 
+  &lt;/div&gt; 
+  &lt;div id=&quot;advert&quot;&gt; 
+    &lt;p&gt;
+      &lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0&quot; width=&quot;107&quot; height=&quot;66&quot;&gt;
+        &lt;param name=&quot;movie&quot; value=&quot;Flash/add.swf&quot;&gt;
+        &lt;param name=quality value=high&gt;
+        &lt;embed src=&quot;Flash/add.swf&quot; quality=high pluginspage=&quot;http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;107&quot; height=&quot;66&quot;&gt;&lt;/embed&gt;
+      &lt;/object&gt;
+    &lt;/p&gt;
+  &lt;/div&gt; 
+&lt;/div&gt; 
+
+&lt;!--end navbar --&gt; 
+&lt;div id=&quot;siteInfo&quot;&gt;  &lt;a href=&quot;http://www.acunetix.com&quot;&gt;About Us&lt;/a&gt; | &lt;a href=&quot;privacy.php&quot;&gt;Privacy Policy&lt;/a&gt; | &lt;a href=&quot;mailto:wvs@acunetix.com&quot;&gt;Contact Us&lt;/a&gt; | &lt;a href=&quot;/Mod_Rewrite_Shop/&quot;&gt;Shop&lt;/a&gt; | &lt;a href=&quot;/hpp/&quot;&gt;HTTP Parameter Pollution&lt;/a&gt; | &amp;copy;2019
+  Acunetix Ltd 
+&lt;/div&gt; 
+    
+    
+&lt;br&gt; 
+&lt;div style=&quot;background-color:lightgray;width:100%;text-align:center;font-size:12px;padding:1px&quot;&gt;
+&lt;p style=&quot;padding-left:5%;padding-right:5%&quot;&gt;&lt;b&gt;Warning&lt;/b&gt;: This is not a real shop. This is an example PHP application, which is intentionally vulnerable to web attacks. It is intended to help you test Acunetix. It also helps you understand how developer errors and bad configuration may let someone break into your website. You can use it to test other tools and your manual hacking skills as well. Tip: Look for potential SQL Injections, Cross-site Scripting (XSS), and Cross-site Request Forgery (CSRF), and more.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;!-- InstanceEnd --&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://testphp.vulnweb.com</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">.htaccess Information Leak</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://testphp.vulnweb.com/Mod_Rewrite_Shop/.htaccess</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces">WSTG-v42-CONF-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>htaccess files can be used to alter the configuration of the Apache Web Server software to enable/disable additional functionality and features that the Apache Web Server software has to offer. </p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (303 bytes)</summary>
+				
+				<pre><code>GET http://testphp.vulnweb.com/Mod_Rewrite_Shop/.htaccess HTTP/1.1
+host: testphp.vulnweb.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://testphp.vulnweb.com/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (252 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: nginx/1.19.0
+Date: Tue, 12 Dec 2023 12:53:45 GMT
+Content-Type: application/octet-stream
+Content-Length: 176
+Last-Modified: Wed, 15 Feb 2012 10:32:40 GMT
+Connection: keep-alive
+ETag: &quot;4f3b89c8-b0&quot;
+Accept-Ranges: bytes
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (176 bytes)</summary>
+				
+				<pre><code>RewriteEngine on
+RewriteRule Details/.*/(.*?)/ details.php?id=$1 [L]
+RewriteRule BuyProduct-(.*?)/ buy.php?id=$1 [L]
+RewriteRule RateProduct-(.*?)\.html rate.php?id=$1 [L]
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>HTTP/1.1 200 OK</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure the .htaccess file is not accessible.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://testphp.vulnweb.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options to protect against &#39;ClickJacking&#39; attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (431 bytes)</summary>
+				
+				<pre><code>GET http://testphp.vulnweb.com/ HTTP/1.1
+host: testphp.vulnweb.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (222 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: nginx/1.19.0
+Date: Tue, 12 Dec 2023 12:41:10 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+X-Powered-By: PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1
+content-length: 4958
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4958 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;
+&quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;&lt;!-- InstanceBegin template=&quot;/Templates/main_dynamic_template.dwt.php&quot; codeOutsideHTMLIsLocked=&quot;false&quot; --&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-2&quot;&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;document_title_rgn&quot; --&gt;
+&lt;title&gt;Home of Acunetix Art&lt;/title&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot;&gt;
+&lt;!-- InstanceBeginEditable name=&quot;headers_rgn&quot; --&gt;
+&lt;!-- here goes headers headers --&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;script language=&quot;JavaScript&quot; type=&quot;text/JavaScript&quot;&gt;
+&lt;!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName==&quot;Netscape&quot;)&amp;&amp;(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//--&gt;
+&lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body&gt; 
+&lt;div id=&quot;mainLayer&quot; style=&quot;position:absolute; width:700px; z-index:1&quot;&gt;
+&lt;div id=&quot;masthead&quot;&gt; 
+  &lt;h1 id=&quot;siteName&quot;&gt;&lt;a href=&quot;https://www.acunetix.com/&quot;&gt;&lt;img src=&quot;images/logo.gif&quot; width=&quot;306&quot; height=&quot;38&quot; border=&quot;0&quot; alt=&quot;Acunetix website security&quot;&gt;&lt;/a&gt;&lt;/h1&gt;   
+  &lt;h6 id=&quot;siteInfo&quot;&gt;TEST and Demonstration site for &lt;a href=&quot;https://www.acunetix.com/vulnerability-scanner/&quot;&gt;Acunetix Web Vulnerability Scanner&lt;/a&gt;&lt;/h6&gt;
+  &lt;div id=&quot;globalNav&quot;&gt; 
+      	&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tr&gt;
+	&lt;td align=&quot;left&quot;&gt;
+		&lt;a href=&quot;index.php&quot;&gt;home&lt;/a&gt; | &lt;a href=&quot;categories.php&quot;&gt;categories&lt;/a&gt; | &lt;a href=&quot;artists.php&quot;&gt;artists
+		&lt;/a&gt; | &lt;a href=&quot;disclaimer.php&quot;&gt;disclaimer&lt;/a&gt; | &lt;a href=&quot;cart.php&quot;&gt;your cart&lt;/a&gt; | 
+		&lt;a href=&quot;guestbook.php&quot;&gt;guestbook&lt;/a&gt; | 
+		&lt;a href=&quot;AJAX/index.php&quot;&gt;AJAX Demo&lt;/a&gt;
+	&lt;/td&gt;
+	&lt;td align=&quot;right&quot;&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt; 
+&lt;/div&gt; 
+&lt;!-- end masthead --&gt; 
+
+&lt;!-- begin content --&gt;
+&lt;!-- InstanceBeginEditable name=&quot;content_rgn&quot; --&gt;
+&lt;div id=&quot;content&quot;&gt;
+	&lt;h2 id=&quot;pageName&quot;&gt;welcome to our page&lt;/h2&gt;
+	  &lt;div class=&quot;story&quot;&gt;
+		&lt;h3&gt;Test site for Acunetix WVS.&lt;/h3&gt;
+	  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;!--end content --&gt;
+
+&lt;div id=&quot;navBar&quot;&gt; 
+  &lt;div id=&quot;search&quot;&gt; 
+    &lt;form action=&quot;search.php?test=query&quot; method=&quot;post&quot;&gt; 
+      &lt;label&gt;search art&lt;/label&gt; 
+      &lt;input name=&quot;searchFor&quot; type=&quot;text&quot; size=&quot;10&quot;&gt; 
+      &lt;input name=&quot;goButton&quot; type=&quot;submit&quot; value=&quot;go&quot;&gt; 
+    &lt;/form&gt; 
+  &lt;/div&gt; 
+  &lt;div id=&quot;sectionLinks&quot;&gt; 
+    &lt;ul&gt; 
+      &lt;li&gt;&lt;a href=&quot;categories.php&quot;&gt;Browse categories&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;artists.php&quot;&gt;Browse artists&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;cart.php&quot;&gt;Your cart&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;login.php&quot;&gt;Signup&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;userinfo.php&quot;&gt;Your profile&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;guestbook.php&quot;&gt;Our guestbook&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;AJAX/index.php&quot;&gt;AJAX Demo&lt;/a&gt;&lt;/li&gt;
+	  &lt;/li&gt; 
+    &lt;/ul&gt; 
+  &lt;/div&gt; 
+  &lt;div class=&quot;relatedLinks&quot;&gt; 
+    &lt;h3&gt;Links&lt;/h3&gt; 
+    &lt;ul&gt; 
+      &lt;li&gt;&lt;a href=&quot;http://www.acunetix.com&quot;&gt;Security art&lt;/a&gt;&lt;/li&gt; 
+	  &lt;li&gt;&lt;a href=&quot;https://www.acunetix.com/vulnerability-scanner/php-security-scanner/&quot;&gt;PHP scanner&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/&quot;&gt;PHP vuln help&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;http://www.eclectasy.com/Fractal-Explorer/index.html&quot;&gt;Fractal Explorer&lt;/a&gt;&lt;/li&gt; 
+    &lt;/ul&gt; 
+  &lt;/div&gt; 
+  &lt;div id=&quot;advert&quot;&gt; 
+    &lt;p&gt;
+      &lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0&quot; width=&quot;107&quot; height=&quot;66&quot;&gt;
+        &lt;param name=&quot;movie&quot; value=&quot;Flash/add.swf&quot;&gt;
+        &lt;param name=quality value=high&gt;
+        &lt;embed src=&quot;Flash/add.swf&quot; quality=high pluginspage=&quot;http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;107&quot; height=&quot;66&quot;&gt;&lt;/embed&gt;
+      &lt;/object&gt;
+    &lt;/p&gt;
+  &lt;/div&gt; 
+&lt;/div&gt; 
+
+&lt;!--end navbar --&gt; 
+&lt;div id=&quot;siteInfo&quot;&gt;  &lt;a href=&quot;http://www.acunetix.com&quot;&gt;About Us&lt;/a&gt; | &lt;a href=&quot;privacy.php&quot;&gt;Privacy Policy&lt;/a&gt; | &lt;a href=&quot;mailto:wvs@acunetix.com&quot;&gt;Contact Us&lt;/a&gt; | &lt;a href=&quot;/Mod_Rewrite_Shop/&quot;&gt;Shop&lt;/a&gt; | &lt;a href=&quot;/hpp/&quot;&gt;HTTP Parameter Pollution&lt;/a&gt; | &amp;copy;2019
+  Acunetix Ltd 
+&lt;/div&gt; 
+    
+    
+&lt;br&gt; 
+&lt;div style=&quot;background-color:lightgray;width:100%;text-align:center;font-size:12px;padding:1px&quot;&gt;
+&lt;p style=&quot;padding-left:5%;padding-right:5%&quot;&gt;&lt;b&gt;Warning&lt;/b&gt;: This is not a real shop. This is an example PHP application, which is intentionally vulnerable to web attacks. It is intended to help you test Acunetix. It also helps you understand how developer errors and bad configuration may let someone break into your website. You can use it to test other tools and your manual hacking skills as well. Tip: Look for potential SQL Injections, Cross-site Scripting (XSS), and Cross-site Request Forgery (CSRF), and more.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;!-- InstanceEnd --&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Cross Site Scripting (DOM Based)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40026/">plugin ID: 40026</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/79.html">79</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>8</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://projects.webappsec.org/Cross-Site-Scripting">http://projects.webappsec.org/Cross-Site-Scripting</a></li>
+										<li><a
+											href="https://cwe.mitre.org/data/definitions/79.html">https://cwe.mitre.org/data/definitions/79.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Cross Site Scripting (Reflected)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40012/">plugin ID: 40012</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/79.html">79</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>8</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://projects.webappsec.org/Cross-Site-Scripting">http://projects.webappsec.org/Cross-Site-Scripting</a></li>
+										<li><a
+											href="https://cwe.mitre.org/data/definitions/79.html">https://cwe.mitre.org/data/definitions/79.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>SQL Injection</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40018/">plugin ID: 40018</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>SQL Injection - MySQL</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40019/">plugin ID: 40019</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>.htaccess Information Leak</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40032/">plugin ID: 40032</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/94.html">94</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>14</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://www.htaccess-guide.com/">http://www.htaccess-guide.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a></li>
+										<li><a
+											href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a></li>
+										<li><a
+											href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
