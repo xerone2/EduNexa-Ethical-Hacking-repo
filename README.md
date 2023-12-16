@@ -1,0 +1,3 @@
+# EduNexa-Ethical-Hacking-repo
+This repository showcases various Ethical Hacking practices i have performed during the internship period @EduNexa
+...
