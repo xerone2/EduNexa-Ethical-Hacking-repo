@@ -1,23 +1,13 @@
-(root kali)-[~/test]
-
 #zip2john secret_.zip > zip.hashes
-
-(root kali)-[~/test]
 
 #john --format=zip zip.hashes
 
 Using default input encoding: UTF-8
-
 Loaded 1 password hash (ZIP, WinZip [PBKDF2-SHA1 128/128 SSE2 4x])
-
 Cost 1 (HMAC size) is 24 for all loaded hashes
-
 Will run 2 OpenMP threads
-
 Proceeding with single, rules: SingleVideos
-
 Press 'q' or Ctrl-C to abort, almost any other key for status
-
 Almost done: Processing the remaining buffered candidate passwords, if any.
 
 Proceeding with wordlist:/usr/share/john/password.lst
@@ -25,7 +15,4 @@ Proceeding with wordlist:/usr/share/john/password.lst
 123456			(secret_.zip/secret.txt)
 1g 0:00:00:03 DONE 2/3 (2023-12-11 17:31) 0.3067g/s 7499p/s 7499c/s 7499C/s 1
 
-
 Use the show" option to display all of the cracked passwords reliably Session completed!
-
-
