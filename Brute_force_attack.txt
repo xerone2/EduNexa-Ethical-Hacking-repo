@@ -1,0 +1,11 @@
+root㉿kali)-[~/test]
+└─# john --incremental zip.hashes     
+Using default input encoding: UTF-8
+Loaded 1 password hash (ZIP, WinZip [PBKDF2-SHA1 128/128 SSE2 4x])
+No password hashes left to crack (see FAQ)
+                                                                             
+┌──(root㉿kali)-[~/test]
+└─# john -show zip.hashes             
+secret_.zip/secret .txt:123456:secret .txt:secret_.zip:secret_.zip
+
+1 password hash cracked, 0 left
